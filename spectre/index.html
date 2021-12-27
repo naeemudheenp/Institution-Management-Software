@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>EXAM_MANAGMENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="spectre/css/style.css">
+      <style>
+      {box-sizing: border-box;}
+
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+      </style>
+
+
+      <script type="text/javascript">
+      function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+      </script>
+
+</head>
+
+<body background="assets/login-register.jpg">
+
+  <div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo">
+
+    </div>
+    <div class="thumbnail__content text-center">
+      <h1 class="heading--primary">SUBJECTS</h1>
+
+    </div>
+
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+  <form   name="STD_ADD" action="EXAM_ADD.php" method="post">
+      <div class="form-group">
+        <label for="username">Exam Name</label>
+        <input class="form-control" type="text" name="username" id="fname" placeholder="Exam Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Teacher</label>
+        <input class="form-control" type="text" name="email" id="teacher" placeholder="Teacher" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="text" name="password" id="fclass" placeholder="Class" required />
+      </div>
+
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+            <input class="btn btn--form" type="submit" value="Create" />
+          </li>
+
+        </ul>
+      </div>
+<center>
+        <p><table border="2">
+          <tr><th>SELECT</TH><th>SUBJECT</th></tr>
+          <tr>
+        <td><input type="checkbox" name="selected[]" value="ENGLISH"></td><td>ENGLISH</td></tr>
+        <td><input type="checkbox" name="selected[]" value="MALAYALAM"/></td><td>MALAYALAM</td></tr>
+        <td><input type="checkbox" name="selected[]" value="ARABIC"/></td><td>ARABIC</td></tr>
+        <td><input type="checkbox" name="selected[]" value="MATHS"></td><td>MATHS</td></tr>
+        <td><input type="checkbox" name="selected[]" value="PHYSICS"></td><td>PHYSICS</td></tr>
+        <td><input type="checkbox" name="selected[]" value="CHEMISTRY"></td><td>CHEMISTRY</td></tr>
+        <td><input type="checkbox" name="selected[]" value="COMPUTERSCIENCE"></td><td>COMPUTER SCIENCE</td></tr>
+        <td><input type="checkbox" name="selected[]" value="BOTONY"></td><td>BOTONY</td></tr>
+        <td><input type="checkbox" name="selected[]" value="ZOOLOGY"></td><td>ZOOLOGY</td></tr>
+        <td><input type="checkbox" name="selected[]" value="COMPUTERAPPLICATION"></td><td>COMPUTER APPLICATION</td></tr>
+        <td><input type="checkbox" name="selected[]" value="ECONOMICS"></td><td>ECONOMICS</td></tr>
+        <td><input type="checkbox" name="selected[]" value="BUSSINESSSTUDIES"></td><td>BUSSINESS STUDIES</td></tr>
+        <td><input type="checkbox" name="selected[]" value="ACCOUNTANCY"></td><td>ACCOUNTANCY</td></tr>
+        <td><input type="checkbox" name="selected[]" value="SOCIOLOGY"></td><td>SOCIOLOGY</td></tr>
+        <td><input type="checkbox" name="selected[]" value="HISTORY"></td><td>HISTORY</td></tr></p><BR><BR>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>

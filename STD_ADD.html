@@ -1,0 +1,44 @@
+<HTML>
+</head>
+  <TITLE>STUDENT_MANAGMENT</TITLE>
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+</head>
+<script type="text/javascript">
+
+
+function $_GET(q,s) {
+
+    s = (s) ? s : window.location.search;
+    var re = new RegExp('&amp;'+q+'=([^&amp;]*)','i');
+    return (s=s.replace(/^\?/,'&amp;').match(re)) ?s=s[1] :s='';
+}
+</script>
+  <BODY background="assets/login-register.JPG">
+<center>
+  <br><br><br>
+  <div>
+<form  class="login-card" name="STD_ADD" action="STD_ADD.php" method="post">
+Admission Number:<input type="text" name="fadm"><br><br>
+Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname"><br><br>
+Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fgender"><br><br>
+Class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fclass"><br><br>
+Year:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fyear"><br><br>
+Roll Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="frno"><br><br>
+Mobile Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fmno"><br><br>
+Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fad"><br><br>
+<input type="submit" class="button">
+  </form>
+</body>
+ <script type="text/javascript">
+var value = $_GET('nfame');
+
+document.STD_ADD.fclass.value=value;
+document.STD_ADD.fclass.readOnly=true;
+if(value==""){
+   document.STD_ADD.fclass.readOnly=false;
+}
+</script>
+  <p>
+	<a href="javascript:history.go(-1)" title="Return to the previous page">&laquo; Go back</a>
+</p>
+  </html>

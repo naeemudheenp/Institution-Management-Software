@@ -1,0 +1,23 @@
+<HTML>
+</head>
+  <TITLE>MESSAGE_MANAGMENT</TITLE>
+  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+</head>
+<body text="Black" >
+<center>
+  <br><br><br>
+  <div>
+    <font color="black">
+<form  class="login-card" name="STD_ADD" action="TMESSAGE_MGMT.php" method="post">
+  <?php
+  $class=$_POST['nfame'];
+  echo"input type='' value='$class' name='nfame'>";
+  ?>
+Please Choose A Format:
+Leave<input type="radio" value="absent" name="choose">
+Leave<input type="radio" value="absent" name="choose">
+  </form>
+  <p>
+	<a href="javascript:history.go(-1)" title="Return to the previous page">&laquo; Go back</a>
+</p>
+  </html>

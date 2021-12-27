@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>EXAM_MANAGMENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="spectre/css/style.css">
+
+</head>
+
+<body background="assets\login-register.jpg">
+
+  <div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo">
+
+    </div>
+      <form   name="STD_ADD" action="EXAM_ADD.php" method="post">
+    <div class="thumbnail__content text-center">
+
+      <p><table border="2">
+        <tr><th>SELECT</TH><th>SUBJECT</th></tr>
+        <tr>
+      <td><input type="checkbox" name="selected[]" value="ENGLISH"></td><td>ENGLISH</td></tr>
+      <td><input type="checkbox" name="selected[]" value="MALAYALAM"/></td><td>MALAYALAM</td></tr>
+      <td><input type="checkbox" name="selected[]" value="ARABIC"/></td><td>ARABIC</td></tr>
+      <td><input type="checkbox" name="selected[]" value="MATHS"></td><td>MATHS</td></tr>
+      <td><input type="checkbox" name="selected[]" value="PHYSICS"></td><td>PHYSICS</td></tr>
+      <td><input type="checkbox" name="selected[]" value="CHEMISTRY"></td><td>CHEMISTRY</td></tr>
+      <td><input type="checkbox" name="selected[]" value="COMPUTERSCIENCE"></td><td>COMPUTER SCIENCE</td></tr>
+      <td><input type="checkbox" name="selected[]" value="BOTONY"></td><td>BOTONY</td></tr>
+      <td><input type="checkbox" name="selected[]" value="ZOOLOGY"></td><td>ZOOLOGY</td></tr>
+      <td><input type="checkbox" name="selected[]" value="COMPUTERAPPLICATION"></td><td>COMPUTER APPLICATION</td></tr>
+      <td><input type="checkbox" name="selected[]" value="ECONOMICS"></td><td>ECONOMICS</td></tr>
+      <td><input type="checkbox" name="selected[]" value="BUSSINESSSTUDIES"></td><td>BUSSINESS STUDIES</td></tr>
+      <td><input type="checkbox" name="selected[]" value="ACCOUNTANCY"></td><td>ACCOUNTANCY</td></tr>
+      <td><input type="checkbox" name="selected[]" value="SOCIOLOGY"></td><td>SOCIOLOGY</td></tr>
+      <td><input type="checkbox" name="selected[]" value="HISTORY"></td><td>HISTORY</td></tr></p><BR><BR>
+      </table>
+    </div>
+
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+
+      <div class="form-group">
+        <label for="username">Exam Name</label>
+        <input class="form-control" type="text" name="fname" id="fname" placeholder="Exam Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Teacher</label>
+        <input class="form-control" type="text" name="teacher" id="teacher" placeholder="Teacher" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="text" name="fclass" id="fclass" placeholder="Class" required />
+      </div>
+
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+            <input class="btn btn--form" type="submit" value="Create" />
+          </li>
+
+        </ul>
+      </div>
+<center>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+</body>
+<p>
+	<a href="javascript:history.go(-1)" title="Return to the previous page">&laquo; Go back</a>
+</p>
+</html>

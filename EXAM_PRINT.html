@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>EXAM PRINT</title>
+</HEAD>
+<BODY background="assets/login-register.JPG">
+  <H3><U>PRINT REPORT CARD(individual)</U></H3>
+  <form method="post" action="print.php" >
+  Exam Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="examname"><br>
+  Student Admission No.:<input type="text" name="adm"><br>
+  <input type="submit" value="go"><BR><BR>
+</form>
+
+<H3><U>PRINT REPORT CARD(all)</U></H3>
+<form method="post" action="printrapid.php" >
+
+Exam Name:<input type="text" name="examname"><br>
+<input type="submit" value="go"><BR><BR>
+</form>
+    <H3><U>PRINT TEACHER COPY</U></H3>
+    <form method="post" action="print-all.php" >
+    Exam Name: <input type="text" name="examname"><br>
+  <input type="submit" value="go"><BR><BR>
+</form>
+<p>
+	<a href="javascript:history.go(-1)" title="Return to the previous page">&laquo; Go back</a>
+</p>
+</BODY>
+</HTML>

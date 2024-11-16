@@ -1,70 +1,30 @@
-###################
-What is CodeIgniter
-###################
+# Institution Management Software - Student Management and Report Cards management
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+**Institution Management Software** is a PHP-based application designed to help educational institutions manage students' information, record their marks, generate report cards, and send mark lists to parents via SMS. This software streamlines the process of managing student data and academic records, while also providing a way to communicate student performance to parents in a timely manner.
 
-*******************
-Release Information
-*******************
+## Key Features
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+- **Student Management**: Add and manage student information such as name, roll number, grade, and contact details.
+- **Marks Entry**: Record and manage students' marks for different subjects, terms, and exams.
+- **Report Card Generation**: Automatically generate printable report cards for students based on their marks.
+- **SMS Notification**: Send mark lists and report cards to parents via SMS for easy communication.
+- **Admin Panel**: Admins can manage all aspects of the system, including student records, marks entry, and sending SMS notifications.
+- **Secure and Scalable**: Designed for scalability, ensuring it can handle multiple students and large amounts of data.
 
-**************************
-Changelog and New Features
-**************************
+## Requirements
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- **PHP**: The application is built using PHP.
+- **MySQL Database**: For storing student records, marks, and other necessary data.
+- **SMS Gateway API**: Integration with an SMS gateway to send messages to parents (e.g., Twilio, Nexmo).
+- **Web Server**: Apache or Nginx to host the application.
 
-*******************
-Server Requirements
-*******************
 
-PHP version 5.6 or newer is recommended.
+## How it Works
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+1. **Add Student**: The admin adds students by entering their details such as name, roll number, and class.
+2. **Enter Marks**: The admin can enter the marks for each student across various subjects and exams.
+3. **Generate Report Cards**: The system calculates students' total marks and grades, and generates printable report cards.
+4. **Send SMS to Parents**: After generating report cards, the system sends the marks and other details to the students' parents via SMS.
+5. **Admin Control**: The admin can manage student information, update marks, and handle the SMS notifications.
 
-************
-Installation
-************
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
